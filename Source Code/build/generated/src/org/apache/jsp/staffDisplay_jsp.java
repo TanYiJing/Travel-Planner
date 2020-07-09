@@ -1,0 +1,334 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import domain.List;
+import domain.ListInterface;
+import domain.Location;
+import DA.LocationDA;
+import DA.categoriesDA;
+
+public final class staffDisplay_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("<link href=\"css/use.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
+      out.write("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
+      out.write("    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.0/css/all.css\" integrity=\"sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ\" crossorigin=\"anonymous\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    ");
+       List<Location> forlda = new List<Location>();
+        LocationDA lda = new LocationDA();
+        forlda=lda.getAllLocation();        
+      out.write("\n");
+      out.write("       \n");
+      out.write("        <style>\n");
+      out.write("            .styled-select {\n");
+      out.write("            background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;\n");
+      out.write("            height: 29px;\n");
+      out.write("            overflow: hidden;\n");
+      out.write("            width: 240px;\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".product-grid6 .product-image6 img {\n");
+      out.write("    /* width: 100%; */\n");
+      out.write("    /* height: auto; */\n");
+      out.write("    width: 216px;\n");
+      out.write("    height: 134px;\n");
+      out.write("    transition: all .5s ease 0s;\n");
+      out.write("}\n");
+      out.write(".product-grid6 .product-content {\n");
+      out.write("    padding: 12px 12px 15px;\n");
+      out.write("    transition: all .5s ease 0s;\n");
+      out.write("    height: 100px;\n");
+      out.write("}\n");
+      out.write(".styled-select select {\n");
+      out.write("   background: transparent;\n");
+      out.write("   border: none;\n");
+      out.write("   font-size: 14px;\n");
+      out.write("   height: 29px;\n");
+      out.write("   padding: 5px; /* If you add too much padding here, the options won't show in IE */\n");
+      out.write("   width: 268px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".semi-square {\n");
+      out.write("   -webkit-border-radius: 5px;\n");
+      out.write("   -moz-border-radius: 5px;\n");
+      out.write("   border-radius: 5px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("/* -------------------- Colors: Background */\n");
+      out.write(".blue    { background-color: #7d8b7d; \n");
+      out.write("color: white;\n");
+      out.write("}\n");
+      out.write("option{\n");
+      out.write("    background-color: #7d8b7d;\n");
+      out.write("    color: white;\n");
+      out.write("\n");
+      out.write("}\n");
+      out.write("        </style>\n");
+      out.write("       \n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("        <a  href=\"AdminPage.jsp\" class=\"btn btn-success\"  > BACK </a>\n");
+      out.write("\n");
+      out.write("    <div style=\"text-align: center;\">\n");
+      out.write("    <button  class=\"btn btn-success\" value=\"search\" name=\"reload\" id=\"reload\" style=\"     background-color: #7d8b7d; border-color:#7d8b7d;  \"> <i class=\"fas fa-redo-alt\"></i></button>\n");
+      out.write("        \n");
+      out.write("    <div style=\"display: inline-block;  font-size: 17pt; \"> 𝐒𝐞𝐚𝐫𝐜𝐡 𝐛𝐲 𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧 𝐭𝐲𝐩𝐞 :</div>\n");
+      out.write("    \n");
+      out.write("    <div class=\"styled-select blue semi-square\" style=\"display: inline-block; transform: translate(0px,10px);   \">\n");
+      out.write("   \n");
+      out.write("        <select class=\"LocationType\">\n");
+      out.write("       <option value=\"s\">Small City</option>\n");
+      out.write("       <option value=\"m\">Medium City</option>\n");
+      out.write("       <option value=\"l\">Large City</option>\n");
+      out.write("       <option value=\"n\">Natural Formation</option>\n");
+      out.write("       <option value=\"p\">Designated Park Or Reserve</option>\n");
+      out.write("       <option value=\"k\">Man-made Landmark</option>\n");
+      out.write("    </select>\n");
+      out.write("    </div>\n");
+      out.write("    <button class=\"locationtypebtn btn\" value=\"Send\">Search</button>\n");
+      out.write("    </div>\n");
+      out.write("    \n");
+      out.write("\n");
+      out.write("    <div id=\"loca_result\" style=\"margin-top: 30px;\">\n");
+      out.write("        \n");
+      out.write("    <div class=\"container\">\n");
+      out.write("    <div class=\"row row_my\">\n");
+      out.write("     \n");
+      out.write("        ");
+ 
+            List<Location> temp_loc = new List <Location>() ;
+           if(session.getAttribute("category")==null|| session.getAttribute("category").equals("country") ){
+           categoriesDA cda = new categoriesDA();
+           temp_loc=  cda.getAllcont();
+            }
+            
+         for(int i = 0 ; i < temp_loc.size();i++) { 
+      out.write("\n");
+      out.write("        \n");
+      out.write("         <div class=\"col-md-3 col-sm-6\">\n");
+      out.write("            <div class=\"product-grid6\">\n");
+      out.write("                <div class=\"product-image6\">\n");
+      out.write("                         <a href=\"#\" >\n");
+      out.write("                            <img  class=\"pic-1\" alt=\"\" src=\"");
+      out.print( temp_loc.getValueOf(i+1).getLink() );
+      out.write("\" >\n");
+      out.write("                        </a>\n");
+      out.write("                        \n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"product-content\">\n");
+      out.write("                    <h3 class=\"title\"><a href=\"#\">");
+      out.print( temp_loc.getValueOf(i+1).getName() );
+      out.write("</a></h3>\n");
+      out.write("                    \n");
+      out.write("                </div>\n");
+      out.write("                    \n");
+      out.write("                <ul class=\"social\">\n");
+      out.write("                    <li><button class=\"country_list btn btn-primary\" id=\"country_list\" value=\"");
+      out.print( temp_loc.getValueOf(i+1).getCode_num());
+      out.write("\" > next</button></li>\n");
+      out.write("                    <li><button name=\"display\" class=\"Display btn btn-primary\" value=\"");
+      out.print( temp_loc.getValueOf(i+1).getCode_num());
+      out.write("\" > Display</button></li>\n");
+      out.write("                    <li><button name=\"edit\" class=\"Edit btn btn-primary\" value=\"");
+      out.print( temp_loc.getValueOf(i+1).getCode_num());
+      out.write("\" > Edit</button></li>\n");
+      out.write("                    <li><button name=\"delete\" class=\"Delete btn btn-primary\" value=\"");
+      out.print( temp_loc.getValueOf(i+1).getCode_num());
+      out.write("\" > Delete</button></li>\n");
+      out.write("\n");
+      out.write("                </ul>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("       ");
+ } 
+      out.write("\n");
+      out.write("    </div>\n");
+      out.write("</div>\n");
+      out.write("    </div>\n");
+      out.write("    \n");
+      out.write("    \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("    \n");
+      out.write("        \n");
+      out.write("    \n");
+      out.write("   \n");
+      out.write("\n");
+      out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<script type=\"text/javascript\" class=\"remove\">\n");
+      out.write(" \n");
+      out.write("     $(\".locationtypebtn\").click(function (e) {\n");
+      out.write("      var x = $(\".LocationType\").val();\n");
+      out.write("     e.preventDefault();\n");
+      out.write("     $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("    // type: \"post\",\n");
+      out.write("     data: {locationtpye: x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("      $(\".remove\").remove();\n");
+      out.write("});\n");
+      out.write("  \n");
+      out.write("    $(\".country_list\").click(function (e) {\n");
+      out.write("      var x = $(this).val();\n");
+      out.write("     e.preventDefault();\n");
+      out.write("     $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("    // type: \"post\",\n");
+      out.write("     data: {country_id: x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("      $(\".remove\").remove();\n");
+      out.write("});\n");
+      out.write("\n");
+      out.write("$(\".Display\").click(function (e) {\n");
+      out.write("      var x = $(this).val();\n");
+      out.write("     e.preventDefault();\n");
+      out.write("     $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("    // type: \"post\",\n");
+      out.write("     data: {display: x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("      $(\".remove\").remove();\n");
+      out.write("});\n");
+      out.write("\n");
+      out.write("$(\".Edit\").click(function (e) {\n");
+      out.write("      var x = $(this).val();\n");
+      out.write("     e.preventDefault();\n");
+      out.write("     $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("    // type: \"post\",\n");
+      out.write("     data: {edit: x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("      $(\".remove\").remove();\n");
+      out.write("});\n");
+      out.write("\n");
+      out.write("$(\".Delete\").click(function (e) {\n");
+      out.write("      var x = $(this).val();\n");
+      out.write("     e.preventDefault();\n");
+      out.write("     $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("    // type: \"post\",\n");
+      out.write("     data: {delete : x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("      $(\".remove\").remove();\n");
+      out.write("});\n");
+      out.write("</script>\n");
+      out.write("<script>\n");
+      out.write("$(\"#reload\").click( function(e){    \n");
+      out.write("    var x =\"reload\";\n");
+      out.write("    e.preventDefault();\n");
+      out.write("    $.ajax({\n");
+      out.write("     url: \"DisplayServlet\",\n");
+      out.write("     data: {reload: x},\n");
+      out.write("     cache: false,\n");
+      out.write("     success: function(data) {\n");
+      out.write("     $(\".row\").html(data).slideDown('slow');\n");
+      out.write("     }\n");
+      out.write("     });\n");
+      out.write("});\n");
+      out.write("\n");
+      out.write("$(\".cost_btn\").click(function(){\n");
+      out.write("    $(\".cost_in\").show();\n");
+      out.write("    $(\".time_in\").hide();    \n");
+      out.write("\n");
+      out.write("})\n");
+      out.write("$(\".time_btn\").click(function(){\n");
+      out.write("    $(\".time_in\").show();\n");
+      out.write("    $(\".cost_in\").hide();\n");
+      out.write("\n");
+      out.write("})\n");
+      out.write("\n");
+      out.write("</script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

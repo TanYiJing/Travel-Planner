@@ -1,0 +1,110 @@
+INSERT INTO TRANSPORTATION ("NAME", SPEED, COST) VALUES ('Bus', 50, 0.1);
+INSERT INTO TRANSPORTATION ("NAME", SPEED, COST) VALUES ('Train', 70, 0.25);
+INSERT INTO TRANSPORTATION ("NAME", SPEED, COST) VALUES ('Car', 100, 1.0);
+INSERT INTO TRANSPORTATION ("NAME", SPEED, COST) VALUES ('Airplane', 600, 0.31);
+
+INSERT INTO STAFF (STAFF_ID, PASSWORD) VALUES (1000, '1000');
+
+
+INSERT INTO CONTINENT ("NAME") VALUES ('Africa'),('Asia'),('Australia'),('Europe'),('North America'),('South America');
+
+INSERT INTO COUNTRY ("NAME","CON_ID","LINK") VALUES ('India',1001,'https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/02/09/india-poverty-tourism-1.jpg?w968');
+INSERT INTO COUNTRY ("NAME","CON_ID","LINK") VALUES ('Japan',1001,'https://us.jnto.go.jp/discoverjapan/images/himeji.jpg');
+INSERT INTO COUNTRY ("NAME","CON_ID","LINK") VALUES ('Malaysia',1001,'https://www.tripsavvy.com/thmb/-WgFwfEr5cwWLrcn_pWy6nvDjlc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/malaysia-travel-583d01ac5f9b58d5b13cec0d.jpg');
+INSERT INTO COUNTRY ("NAME","CON_ID","LINK") VALUES ('Singapore',1001,'https://media.theindependent.sg/2019/02/singapore-1.jpg');
+INSERT INTO COUNTRY ("NAME","CON_ID","LINK") VALUES ('Taiwan',1001,'https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/4/18/96c284fc3fd74c409561e5511be03556_18.jpg');
+
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Johor Bahru',2002,'https://cdn.thecrazytourist.com/wp-content/uploads/2018/08/ccimage-shutterstock_783358090-768x576.jpg');
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Penang' ,2002,'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/152434_shutterstock_6598171.jpg');
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Malacca',2002,'http://static.asiawebdirect.com/m/.imaging/1080x720/website/kl/portals/malacca-ws/homepage/attractions/10-things-to-see/pagePropertiesImage.jpg');
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Kuantan',2002,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoXloqlQSHlPDVUGFWLfqFeVP20cXfqFa1YvgqC4skTkjN081');
+
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Tohoku',2001,'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_768,c_fill,g_auto,h_432,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F160517084515-tohoku-jodogahama-beach.jpg');
+INSERT INTO STATE ("NAME","COUNTRY_ID","LINK") VALUES ('Kanto',2001,'https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2016/02/Nikko-Kanto-2.jpg');
+
+
+
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.6274565,1.426691,'Legoland','p',FALSE,TRUE,FALSE,3000,'http://www.malaysia.travel/~/media/Images/Tourism%20Malaysia/Assets/Places/States/Johor/Legoland/iphone/Legoland-1.ashx?mw=600&mh=400&hash=535844314B154C5C736E5E68BF07D870B3C15073');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.6144091,1.4214855,'Hello Kitty Town','s',FALSE,TRUE,FALSE,3000,'https://media-cdn.tripadvisor.com/media/photo-s/03/a5/b3/9e/sanrio-hello-kitty-town.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.5690876,1.4179164,'Nusajaya','m',FALSE,TRUE,FALSE,3000,'http://www.homestaytawakkalnusajaya.com/wp-content/uploads/2016/02/Foto-Banggunan-Di-Kota-Iskandar.jpg?w=640');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.2906186,1.9351119,'Senai International Airport','s',TRUE,TRUE,TRUE,3000,'https://www.bookmytaxi.sg/wp-content/uploads/2018/01/johor-bahru-airport.jpg');
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (100.2706514,5.3981543,'Kek Lok Si Temple','p',FALSE,TRUE,FALSE,3001,'http://www.malaysia.travel/~/media/Images/Tourism%20Malaysia/Assets/Places/States/penang/kek-lok-si/iphone/kek_lok_si_800x532.ashx?mw=600&mh=400&hash=7EA167873BBB5D31BFC6645A359B0338CD23928D');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (100.2685769,5.4084611,'Penang Hill','n',FALSE,TRUE,FALSE,3001,'http://www.penanghill.gov.my/images/PenngHillSource/WelcomeSlideShow/SlideOne.png');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (100.2885095,5.4377324,'Penang Botanic Gardens','n',FALSE,FALSE,FALSE,3001,'https://www.malaysia-traveller.com/images/penang-botanic-gardens-aquatic-garden.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (100.2716694,5.2955667,'Penang International Airport','s',TRUE,TRUE,TRUE,3001,'https://i.malaysiakini.com/1292/35d8d3ef8a49deadbd48fb16cba34a31.jpeg=s480');
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (102.089703,2.3191685,'A Famosa','s',FALSE,TRUE,FALSE,3002,'http://static.asiawebdirect.com/m/kl/portals/malacca-ws/homepage/attractions/a-famosa-melaka/pagePropertiesImage/a-famosa-melaka.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (102.2461988,2.1948505,'Jonker Street Night Market','s',FALSE,FALSE,FALSE,3002,'https://www.mybeautycravings.com/wp-content/uploads/2018/11/20181020_190620.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (102.2478942,2.2211551,'Melaka Sentral','s',TRUE,TRUE,FALSE,3002,'https://www.easybook.com/images/bus-terminals/melaka-sentral-bus-terminal.jpg');
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.3258226,3.8078607,'Masjid Negeri Pahang','p',FALSE,TRUE,FALSE,3003,'https://upload.wikimedia.org/wikipedia/commons/b/b0/Pahang_state_mosque.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.3452537,3.8072854,'Taman Gelora','n',FALSE,TRUE,FALSE,3003,'https://kuantan.org/img/taman-gelora-bridge.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (103.2827871,3.830146,'Terminal Sentral Kuantan','s',TRUE,TRUE,FALSE,3003,'http://3.bp.blogspot.com/-mPvx4_C8ams/Ufw825cyvsI/AAAAAAAAGJk/uFEuuvKEiAs/s1600/terminar+sentral+kuantan.jpg');
+
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (140.6899285,40.7363732,'Aomori Airport','s',TRUE,TRUE,TRUE,3004,'https://image.appi.co.jp/img/welcome/img-airport-aomori.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (141.4817122,40.5165586,'Hachinohe','s',FALSE,TRUE,FALSE,3004,'https://japan.stripes.com/sites/default/files/styles/community_site_carousel_750x500/public/article-images/0627_kabu1.jpg?itok=jLAZGPjI');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (140.8930444,40.434155,'Towada Shrine','n',FALSE,FALSE,FALSE,3004,'https://media-cdn.tripadvisor.com/media/photo-s/14/16/89/7d/caption.jpg');
+
+
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (139.7727361,35.5471704,'Haneda Airport','s',TRUE,TRUE,TRUE,3005,'http://www.traveller.com.au/content/dam/images/h/1/8/f/8/b/image.related.articleLeadwide.620x349.h18f65.png/1543359856593.jpg');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (139.7600818,35.6792538,'Mitsubishi Ichigokan Museum','s',FALSE,FALSE,FALSE,3005,'http://www.shift.jp.org/guide/wp-content/uploads/2016/04/Mitsubishi_Ichigokan.png');
+INSERT INTO LOCATION ("LON","LAT","NAME","TYPE","T_STATION","B_STATION","FLIGHT","STATE_ID","LINK") VALUES (139.7053834,35.5509544,'Nishirokugo Sanchome Park','s',FALSE,TRUE,FALSe,3005,'http://www.bellissimakids.com/wp-content/uploads/2013/06/NISHI-ROKUGO-TOKYO-JAPAN_3.jpg');
+
+
+INSERT INTO ADJENCENT VALUES (5003,5002);
+INSERT INTO ADJENCENT VALUES (5002,5000);
+INSERT INTO ADJENCENT VALUES (5002,5001);
+INSERT INTO ADJENCENT VALUES (5000,5001);
+INSERT INTO ADJENCENT VALUES (5002,5003);
+INSERT INTO ADJENCENT VALUES (5000,5002);
+INSERT INTO ADJENCENT VALUES (5001,5000);
+INSERT INTO ADJENCENT VALUES (5001,5002);
+
+
+INSERT INTO ADJENCENT VALUES (5005,5006);
+INSERT INTO ADJENCENT VALUES (5006,5005);
+INSERT INTO ADJENCENT VALUES (5006,5004);
+INSERT INTO ADJENCENT VALUES (5004,5006);
+INSERT INTO ADJENCENT VALUES (5006,5007);
+INSERT INTO ADJENCENT VALUES (5007,5006);
+
+INSERT INTO ADJENCENT VALUES (5008,5009);
+INSERT INTO ADJENCENT VALUES (5009,5008);
+INSERT INTO ADJENCENT VALUES (5009,5010);
+INSERT INTO ADJENCENT VALUES (5010,5009);
+
+INSERT INTO ADJENCENT VALUES (5012,5011);
+INSERT INTO ADJENCENT VALUES (5011,5012);
+INSERT INTO ADJENCENT VALUES (5011,5013);
+INSERT INTO ADJENCENT VALUES (5013,5011);
+
+
+INSERT INTO ADJENCENT VALUES (5003,5010);
+INSERT INTO ADJENCENT VALUES (5010,5003);
+INSERT INTO ADJENCENT VALUES (5010,5013);
+INSERT INTO ADJENCENT VALUES (5013,5010);
+INSERT INTO ADJENCENT VALUES (5010,5007);
+INSERT INTO ADJENCENT VALUES (5007,5010);
+
+
+INSERT INTO ADJENCENT VALUES (5014,5015);
+INSERT INTO ADJENCENT VALUES (5014,5016);
+INSERT INTO ADJENCENT VALUES (5016,5014);
+INSERT INTO ADJENCENT VALUES (5016,5015);
+INSERT INTO ADJENCENT VALUES (5015,5016);
+INSERT INTO ADJENCENT VALUES (5016,5014);
+
+INSERT INTO ADJENCENT VALUES (5017,5018);
+INSERT INTO ADJENCENT VALUES (5017,5019);
+INSERT INTO ADJENCENT VALUES (5018,5017);
+INSERT INTO ADJENCENT VALUES (5019,5017);
+
+INSERT INTO ADJENCENT VALUES (5014,5017);
+INSERT INTO ADJENCENT VALUES (5017,5014);
+INSERT INTO ADJENCENT VALUES ();
+INSERT INTO ADJENCENT VALUES ();
+INSERT INTO ADJENCENT ();
+
